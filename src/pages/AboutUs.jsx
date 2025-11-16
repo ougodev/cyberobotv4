@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const AboutUs = () => {
   const teamMembers = [
@@ -277,18 +278,18 @@ const AboutUs = () => {
                 Whether you're a participant, sponsor, or supporter, there's a place for you in our community
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="#register"
+                <Link
+                  to="/program/challenges"
                   className="px-10 py-4 bg-white text-cyber-primary font-orbitron font-bold rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   Register for Challenge
-                </a>
-                <a
-                  href="/contact"
+                </Link>
+                <Link
+                  to="/contact"
                   className="px-10 py-4 border-2 border-white text-white font-orbitron font-bold rounded-lg transform transition-all duration-300 hover:bg-white hover:text-cyber-primary hover:scale-105"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
