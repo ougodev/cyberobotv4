@@ -9,6 +9,9 @@
   
   # Publish directory (Vite outputs to 'dist' by default)
   publish = "dist"
+  
+  # Force fresh build
+  ignore = "false"
 
 # Production context: all deploys from the main branch
 [context.production]
