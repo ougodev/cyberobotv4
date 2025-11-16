@@ -1,7 +1,15 @@
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 import GlobeAnimation from '../components/GlobeAnimation'
 
 const Challenges = () => {
+  useEffect(() => {
+    // Force scroll to top when component mounts
+    window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+  }, [])
+
   const challenges = [
     {
       id: 1,

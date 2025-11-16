@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -14,13 +14,11 @@ import ParticleBackground from './components/ParticleBackground'
 function ScrollToTop() {
   const { pathname } = useLocation()
 
-  useEffect(() => {
-    // Force scroll to top immediately
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-    // Also ensure it happens after a small delay for safety
-    setTimeout(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-    }, 50)
+  useLayoutEffect(() => {
+    // Force scroll to top BEFORE painting
+    window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
   }, [pathname])
 
   return null
