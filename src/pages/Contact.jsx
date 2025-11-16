@@ -117,7 +117,7 @@ const Contact = () => {
                         href="tel:+21653081308"
                         className="text-gray-300 font-exo hover:text-cyber-primary transition-colors"
                       >
-                        +216 53 081 308
+                        +216 96 619 523
                       </a>
                     </div>
                   </div>
