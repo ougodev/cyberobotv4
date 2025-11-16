@@ -11,9 +11,11 @@ const ChallengeTransition = ({ challenge, onComplete }) => {
     setPhase('complete')
     setTimeout(() => {
       if (onComplete) onComplete()
-      // Scroll to top before navigation
-      window.scrollTo(0, 0)
       navigate('/program/challenges')
+      // Scroll to top after a small delay to ensure navigation is complete
+      setTimeout(() => {
+        window.scrollTo(0, 0)
+      }, 100)
     }, 500)
   }
 
