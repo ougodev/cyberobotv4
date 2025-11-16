@@ -16,6 +16,15 @@ const Home = () => {
     setIsVisible(true)
   }, [])
 
+  const handleShowTransition = () => {
+    // Scroll to top BEFORE showing the transition
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    // Small delay to ensure scroll is complete
+    setTimeout(() => {
+      setShowTransition(true)
+    }, 50)
+  }
+
   return (
     <div className="overflow-hidden">
       {/* Video Hero Section */}
@@ -66,12 +75,12 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button onClick={() => setShowTransition(true)} className="btn-primary">
+              <button onClick={handleShowTransition} className="btn-primary">
                 <i className="fas fa-rocket mr-2"></i>
                 Register Now
               </button>
               <button 
-                onClick={() => setShowTransition(true)}
+                onClick={handleShowTransition}
                 className="btn-outline"
               >
                 <i className="fas fa-book mr-2"></i>
@@ -260,7 +269,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
-                onClick={() => setShowTransition(true)}
+                onClick={handleShowTransition}
                 className="px-12 py-5 bg-white text-cyber-primary font-orbitron font-bold text-lg rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
               >
                 Register for Challenge
