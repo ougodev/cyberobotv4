@@ -39,28 +39,28 @@ const Schedule = () => {
     },
     {
       time: '12:30',
-      activity: 'REMISE DES PRIX JUNIOR & SUIVEUR',
+      activity: 'JUNIOR & LINE FOLLOWER AWARDS',
       description: 'Awards ceremony for Junior and Line Follower challenges',
       icon: 'fa-trophy',
       color: 'from-yellow-500 to-amber-500'
     },
     {
       time: '13:00 - 14:00',
-      activity: 'DÉJEUNER',
+      activity: 'LUNCH BREAK',
       description: 'Lunch break for all participants',
       icon: 'fa-utensils',
       color: 'from-red-500 to-rose-500'
     },
     {
       time: '14:00',
-      activity: 'LANCEMENT TOUT TERRAIN',
+      activity: 'ALL TERRAIN LAUNCH',
       description: 'Competition rounds for All Terrain challenge',
       icon: 'fa-mountain',
       color: 'from-green-500 to-teal-500'
     },
     {
       time: '17:00',
-      activity: 'REMISE DES PRIX TOUT TERRAIN',
+      activity: 'ALL TERRAIN AWARDS',
       description: 'Awards ceremony for All Terrain challenge and closing',
       icon: 'fa-trophy',
       color: 'from-yellow-500 to-amber-500'

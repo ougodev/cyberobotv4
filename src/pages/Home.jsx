@@ -46,7 +46,7 @@ const Home = () => {
             </h1>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-exo font-bold mb-6 text-white">
-              À travers le Globe
+              Around the Globe
             </h2>
 
             <div className="mb-8">
@@ -61,8 +61,8 @@ const Home = () => {
             </div>
 
             <p className="text-lg md:text-xl text-gray-300 font-exo max-w-3xl mx-auto mb-12 leading-relaxed">
-              Cette année, le monde devient notre arène. Chaque défi se déroule dans un pays différent, 
-              où l'innovation rencontre l'aventure et où la créativité ne connaît pas de frontières.
+              This year, the world becomes our arena. Each challenge takes place in a different country, 
+              where innovation meets adventure and creativity knows no borders.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -107,21 +107,21 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h2 className="section-title">
-                Un Nouveau Chapitre Commence
+                A New Chapter Begins
               </h2>
               <div className="space-y-6 text-gray-300 font-exo text-lg">
                 <p className="leading-relaxed">
-                  Nous emmenons la robotique dans un tour du monde, où chaque mission apporte 
-                  de nouveaux défis, de nouvelles cultures et de nouvelles découvertes.
+                  We're taking robotics on a world tour, where each mission brings 
+                  new challenges, new cultures, and new discoveries.
                 </p>
                 <p className="leading-relaxed">
-                  Nos robots sont plus que des concurrents, ce sont des <span className="text-cyber-primary font-bold">voyageurs</span>, 
-                  des <span className="text-cyber-primary font-bold">rêveurs</span> et des <span className="text-cyber-primary font-bold">explorateurs</span> dans 
-                  une quête mondiale alimentée par la passion et la technologie.
+                  Our robots are more than competitors, they are <span className="text-cyber-primary font-bold">travelers</span>, 
+                  <span className="text-cyber-primary font-bold">dreamers</span>, and <span className="text-cyber-primary font-bold">explorers</span> on 
+                  a global quest fueled by passion and technology.
                 </p>
                 <p className="leading-relaxed">
-                  Préparez-vous à naviguer dans des territoires inconnus, à décoder les missions cachées 
-                  et à vivre le frisson d'un voyage robotique mondial.
+                  Get ready to navigate uncharted territories, decode hidden missions, 
+                  and experience the thrill of a global robotics journey.
                 </p>
                 <div className="pt-4">
                   <div className="inline-flex items-center space-x-2 bg-cyber-primary/10 border border-cyber-primary/30 rounded-lg px-6 py-3">

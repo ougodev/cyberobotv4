@@ -54,7 +54,7 @@ const VideoHero = () => {
       <button
         onClick={toggleMute}
         className="absolute bottom-24 right-4 md:bottom-28 md:right-8 z-30 bg-cyber-primary/80 hover:bg-cyber-primary backdrop-blur-sm text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 group"
-        aria-label={isMuted ? 'Activer le son' : 'Couper le son'}
+        aria-label={isMuted ? 'Unmute' : 'Mute'}
       >
         {isMuted ? (
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -66,7 +66,7 @@ const VideoHero = () => {
           </svg>
         )}
         <span className="absolute -top-12 right-0 bg-cyber-darker/90 text-white px-3 py-1 rounded text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-          {isMuted ? 'Activer le son' : 'Couper le son'}
+          {isMuted ? 'Unmute' : 'Mute'}
         </span>
       </button>
 
